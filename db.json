@@ -1,0 +1,37 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Cheerful Loving Couple Bakers Drinking Coffee",
+      "description": "It’s no secret that the digital industry is booming. From exciting startups to global brands, companies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving …",
+      "img_url": "https://awcdn1.ahmad.works/writing/wp-content/uploads/2015/05/cheerful-loving-couple-bakers-drinking-coffee-PCAVA6B-2-267x205.jpg",
+      "user_id": 1
+    },
+    {
+      "title": "Div Academy",
+      "description": "Front-end Developer",
+      "img_url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "user_id": 1,
+      "id": 2
+    },
+    {
+      "title": "What is Lorem Ipsum ?",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "img_url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "user_id": 1,
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Pervin Pashazade",
+      "username": "pervinpashazade"
+    },
+    {
+      "id": 2,
+      "fullname": "Yasemen Memmedli",
+      "username": "yasimen"
+    }
+  ]
+}
