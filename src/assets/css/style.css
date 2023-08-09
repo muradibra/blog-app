@@ -34,3 +34,17 @@
 .blog-card .content a:hover {
     color: #fff;
 }
+
+.blog-item .img-wrapper {
+    width: 100%;
+    height: 70vh;
+}
+
+.blog-item .img-wrapper img {
+    width: 100%;
+}
+
+.blog-item .text-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}

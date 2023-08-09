@@ -19,31 +19,15 @@ function BlogItem() {
     return (
         <Container>
             <header className='py-3'>
-                <div className="logo-wrapper "
-                    style={{
-                        marginLeft: "206px"
-                    }}
-                >
+                <div className="logo-wrapper">
                     <img src={Logo} alt="" />
                 </div>
             </header>
             <div className='blog-item my-4'>
-                <div className='img-wrapper d-flex justify-content-center' >
-                    <img
-                        src={img_url}
-                        alt="Photo"
-                        style={{
-                            width: '880px',
-                            height: '400px'
-                        }}
-                    />
+                <div className='img-wrapper d-flex justify-content-center'>
+                    <img src={img_url} alt="Photo" />
                 </div>
-                <div className='text-wrapper'
-                    style={{
-                        margin: "0 245px",
-                        padding: "40px 0"
-                    }}
-                >
+                <div className='text-wrapper py-3'>
                     <div className='title'>
                         <h1 className='fw-bold'>
                             {title}
