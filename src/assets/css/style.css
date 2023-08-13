@@ -1,3 +1,8 @@
+body.dark {
+    background-color: #202C37;
+    color: #fff;
+}
+
 .blog-card {
     display: grid;
     grid-template-columns: 195px auto;
@@ -47,4 +52,13 @@
 .blog-item .text-wrapper {
     width: 90%;
     margin: 0 auto;
+}
+
+.ellipsis {
+    /* border: 3px solid black; */
+    /* line-clamp: 3; */
+    /* width: 20%; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
 }

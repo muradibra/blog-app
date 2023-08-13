@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Header from '../../layout/Header/Header'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { apiUrl } from '../../../Config'
 import { Container, Row, Spinner } from 'reactstrap'
 import BlogCard from '../../Lib/Blog/BlogCard'
+import { LoaderContext } from '../../../context/LoaderContext'
+import Loader from '../../Lib/Loader/Loader'
 
 function Home() {
     const [list, setList] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
+    const { isLoading, setIsLoading } = useContext(LoaderContext)
 
     useEffect(() => {
         getList()
@@ -45,11 +47,7 @@ function Home() {
                             </Row>
                         </Container>
                         :
-                        <div className="text-center">
-                            <Spinner>
-                                Loading...
-                            </Spinner>
-                        </div>
+                        <Loader />
 
                 }
             </div>

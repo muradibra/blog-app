@@ -1,16 +1,18 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Select from 'react-select'
 import { Container, Form, Input, Label, Row } from 'reactstrap'
 import { apiUrl, toast_config } from '../../../Config'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { errorMessages } from '../../../utils/renderErrorMessages'
+import { ThemeContext } from '../../../context/ThemeContext'
 
 function BlogCreate() {
   const [userList, setUserList] = useState([])
   const [validationErrors, setValidationErrors] = useState({})
   const [author, setAuthor] = useState('')
+  const { theme } = useContext(ThemeContext)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -105,6 +107,10 @@ function BlogCreate() {
                     getOptionLabel={option => option.fullname}
                     value={author}
                     onChange={selectedOption => setAuthor(selectedOption)}
+                    className={
+                      `${validationErrors.user_id ? "border border-danger" : ""}
+                       ${theme === "dark" ? "text-dark" : ""} `
+                    }
                   />
 
                   {
@@ -121,6 +127,7 @@ function BlogCreate() {
                     name='title'
                     id='title'
                     placeholder='Enter title'
+                    className={`${validationErrors.title ? "border border-danger" : ""}`}
                   />
 
                   {
@@ -137,6 +144,7 @@ function BlogCreate() {
                     name='img_url'
                     id='img_url'
                     placeholder='Enter image url'
+                    className={`${validationErrors.img_url ? "border border-danger" : ""}`}
                   />
 
                   {
@@ -154,6 +162,7 @@ function BlogCreate() {
                     name='description'
                     placeholder='Enter blog description'
                     rows={7}
+                    className={`${validationErrors.description ? "border border-danger" : ""}`}
                   />
 
                   {
